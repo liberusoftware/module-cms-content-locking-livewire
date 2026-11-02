@@ -12,7 +12,6 @@ final class ContentLockingLivewireServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'module-cms-content-locking');
         Livewire::component('module-cms-content-locking::lock-presence', LockPresence::class);
     }
 }
